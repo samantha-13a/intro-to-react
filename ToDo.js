@@ -4,7 +4,7 @@ class ToDo extends Component {
     render () {
         return (
             <li>
-                <input type="checkbox" cbecked={ this.props.isCompleted } />
+                <input type="checkbox" cbecked={ this.props.isCompleted } onChange={ this.props.toggleComplete } />
                 <span>{ this.props.description }</span>
             </li>
         );
